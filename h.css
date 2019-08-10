@@ -1,0 +1,186 @@
+/*
+Global
+*/
+body {
+    font-family: arial;
+    font-size: 13px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: verdana;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+/*
+header
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    height: 64px;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header .logo i {
+    font-size: 28px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header .fa-bars {
+    font-size: 24px;
+    display: none;
+}
+
+/*
+banner
+*/
+.banner {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.banner div {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.banner a {
+    margin-top: 10px;
+    display: inline-block;
+    color: red;
+}
+
+/*club*/
+.club {
+    background: #e6faff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.club img {
+    margin-bottom: 10px;
+}
+
+.club section div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*
+pets
+*/
+.pets {
+    background: #e3e2ff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.pets div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pets img {
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 10px;
+}
+
+/*
+footer 
+*/
+footer {
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    margin-left: 10px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 540px) {
+    header nav{
+        display: none;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+}
